@@ -3,6 +3,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 .card {
@@ -10,12 +11,12 @@ body{
     background-color: #cd5353;
     width: 400px;
     height: 450px;
+    margin: 10% 0;
     box-shadow: 7px 7px 7px rgba(0,0,0,0.2);
     cursor: pointer;
-    top: 100px;
     transform-style: preserve-3d;
-	transform: perspective(2500px);
-  transition: 2s;
+	  transform: perspective(2500px);
+    transition: 2s;
   }
 
   .cardFront {
@@ -324,29 +325,25 @@ body{
     width: 100px;
     height: 120px;
     position: fixed;
-    margin: 0 75% 0 0;
+    margin: 0 65% 0 0;
     bottom:0px;
     border-radius: 80%;
     box-shadow:inset -15px -15px 10px rgba(0,0,0,0.2);
     animation:fly 5s linear infinite;
     animation-delay: 1s;
     transform: translateY(120px);
-    overflow-block: hidden;
   }
 
   @keyframes fly {
     0%{
       transform: translateY(120px);
-      overflow-block: hidden;
     }
     10%{
       transform:  translateY(-100x) translateX(10px);
-      overflow-block: hidden;
     }
 
     20%{
       transform: translateY(-200px) translateX(20px);
-      overflow-block: hidden;
   
     }
     30%{
@@ -354,17 +351,16 @@ body{
     }
     40%{
       transform: translateY(-400px) translateX(20px);
-      overflow-block: hidden;
     }
 
     50%{
       transform: translateY(-500px) translateX(10px);
-      overflow-block: hidden;
     }
+
     60%{
       transform: translateY(-600px) translateX(0px);
-      overflow-block: hidden;
     }
+
     70%{
       transform: translateY(-700px) translateX(-10px);
     }
@@ -413,7 +409,7 @@ body{
   .balloon:nth-child(3){ 
     background-image: radial-gradient(#8e50c1, #5c2687);
     animation-duration:7s;
-    margin: 0 0 0 45%;
+    margin: 0 0 0 35%;
   }
   .balloon:nth-child(3)::after{
     border-bottom: 16px solid #5c2687;
@@ -422,7 +418,7 @@ body{
   .balloon:nth-child(4){ 
     background-image:radial-gradient(#F86624, #b94d1b); 
     animation-duration:8s;
-    margin: 0 0 0 75%;
+    margin: 0 0 0 65%;
   }
   .balloon:nth-child(4)::after{
     border-bottom: 16px solid #b94d1b;
@@ -431,7 +427,7 @@ body{
   .balloon:nth-child(5){
     background-image:radial-gradient(#DB2763, #a91446); 
     animation-duration:6s;
-    margin: 0 0 0 60%;
+    margin: 0 0 0 50%;
   }
   .balloon:nth-child(5)::after{
     border-bottom: 16px solid #a91446;
@@ -440,7 +436,7 @@ body{
   .balloon:nth-child(6){
     background-image:radial-gradient(#4ca2ed, #226cad); 
     animation-duration:11s;
-    margin: 0 0 0 90%;
+    margin: 0 0 0 80%;
   }
   .balloon:nth-child(6)::after{
     border-bottom: 16px solid #226cad;
@@ -449,7 +445,7 @@ body{
   .balloon:nth-child(7){
     background-image:radial-gradient(#4ca2ed, #226cad); 
     animation-duration:9s;
-    margin: 0 40% 0 0;
+    margin: 0 35% 0 0;
   }
 
   .balloon:nth-child(7)::after{
@@ -459,7 +455,7 @@ body{
   .balloon:nth-child(8){
     background-image:radial-gradient( #F86624, #b94d1b); 
     animation-duration:10s;
-    margin: 0 55% 0 0;
+    margin: 0 50% 0 0;
   }
 
   .balloon:nth-child(8)::after{
@@ -469,7 +465,7 @@ body{
   .balloon:nth-child(9){
     background-image:radial-gradient(#DB2763, #a91446);
     animation-duration:12s;
-    margin: 0 90% 0 0;
+    margin: 0 80% 0 0;
   }
 
   .balloon:nth-child(9)::after{
